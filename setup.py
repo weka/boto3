@@ -14,7 +14,7 @@ VERSION_RE = re.compile(r'''__version__ = ['"]([0-9.]+)['"]''')
 
 
 requires = [
-    'botocore>=1.21.34,<1.22.0',
+    'botocore@git+https://github.com/weka/botocore@9cbb48b371a919a45af161493c01780d165d2d8c#egg=botocore',
     'jmespath>=0.7.1,<1.0.0',
     's3transfer>=0.5.0,<0.6.0'
 ]
@@ -31,7 +31,7 @@ setup(
     description='The AWS SDK for Python',
     long_description=open('README.rst').read(),
     author='Amazon Web Services',
-    url='https://github.com/boto/boto3',
+    url='https://github.com/weka/boto3',
     scripts=[],
     packages=find_packages(exclude=['tests*']),
     package_data={
@@ -57,6 +57,6 @@ setup(
     ],
     project_urls={
         'Documentation': 'https://boto3.amazonaws.com/v1/documentation/api/latest/index.html',
-        'Source': 'https://github.com/boto/boto3',
+        'Source': 'https://github.com/weka/boto3',
     },
 )
